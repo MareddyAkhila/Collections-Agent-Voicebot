@@ -1,0 +1,18 @@
+{
+  "type": "object",
+  "properties": {
+    "account_id": {
+      "type": "string",
+      "description": "The customer's account ID, e.g. ACC-88392"
+    },
+    "ptp_date": {
+      "type": "string",
+      "description": "ISO-8601 date the customer committed to, e.g. 2026-08-14"
+    },
+    "amount": {
+      "type": "number",
+      "description": "Amount in INR the customer agreed to pay."
+    }
+  },
+  "required": ["account_id", "ptp_date", "amount"]
+}
