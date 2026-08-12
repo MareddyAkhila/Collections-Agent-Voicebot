@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "account_id": {
+      "type": "string",
+      "description": "The customer's account ID, e.g. ACC-88392"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["PTP_AGREED", "ALREADY_PAID", "DISPUTED", "HARDSHIP_ESCALATED", "WRONG_PERSON", "DO_NOT_CALL", "NO_RESPONSE"],
+      "description": "Final disposition of the call."
+    },
+    "notes": {
+      "type": "string",
+      "description": "Free-text notes, e.g. what the customer said, payment reference, etc."
+    }
+  },
+  "required": ["account_id", "status"]
+}
