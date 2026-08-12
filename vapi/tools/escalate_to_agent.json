@@ -1,0 +1,15 @@
+{
+  "type": "object",
+  "properties": {
+    "account_id": {
+      "type": "string",
+      "description": "The customer's account ID, e.g. ACC-88392"
+    },
+    "reason": {
+      "type": "string",
+      "enum": ["HARDSHIP_REQUEST", "DISPUTE", "OTHER"],
+      "description": "Why this call is being escalated to a human agent."
+    }
+  },
+  "required": ["account_id", "reason"]
+}
