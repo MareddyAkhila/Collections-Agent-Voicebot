@@ -1,21 +1,16 @@
 {
-  "type": "function",
-  "function": {
-    "name": "verify_customer",
-    "description": "Verifies the caller's identity against the account on file, using the last 4 digits of their PAN or their birth year. Must be called and must return verified:true before any debt, loan, or amount details may be disclosed.",
-    "parameters": {
-      "type": "object",
-      "properties": {
-        "account_id": {
-          "type": "string",
-          "description": "The customer's account ID, e.g. ACC-88392"
-        },
-        "verification_code": {
-          "type": "string",
-          "description": "The last-4-PAN-digits or birth year the caller provided verbally."
-        }
-      },
-      "required": ["account_id", "verification_code"]
+  "type": "object",
+  "properties": {
+    "account_id": {
+      "type": "string",
+      "description": "The customer's account ID, e.g. ACC-88392"
+    },
+    "verification_code": {
+      "type": "string",
+      "description": "The last-4-PAN-digits or birth year the caller provided verbally."
     }
-  }
+  },
+  "required": ["account_id", "verification_code"],
+  "additionalProperties": false
+}
 }
