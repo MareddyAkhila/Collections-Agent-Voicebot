@@ -52,12 +52,11 @@ each of the 5 tools in your Vapi assistant.
 - **Voice:** Vapi-hosted voice ("Elliot") — ElevenLabs/Cartesia are drop-in alternatives
 - **First message:** see `vapi/system_prompt.txt` header
 - **System prompt:** paste the full contents of `vapi/system_prompt.txt`
-- **Tools:** create all 5 functions from `vapi/tool_definitions.json`, each
+- **Tools:** create all 5 functions from `vapi/tools`, each
   pointed at your ngrok webhook URL
 
 ### 4. Test it
-Use Vapi's "Talk" button to test in-browser, or open the deployed
-`site/index.html` widget page.
+Use Vapi's "Talk" button to test in-browser https://vapi.ai?demo=true&shareKey=a2b1b41d-2cd8-433a-a689-bcbf8141169c&assistantId=73600181-28ba-4d25-ab11-076ed7157ace
 
 ## Design choices (the "why," not just the "what")
 
@@ -142,9 +141,4 @@ Use Vapi's "Talk" button to test in-browser, or open the deployed
   local process + ngrok tunnel, so the live widget page keeps working
   without my machine staying on.
 
-## Known limitation
 
-The `site/index.html` widget page (hosted via GitHub Pages) only works while
-the mock server and ngrok tunnel are running locally on the developer's
-machine — it is not a persistently deployed backend. For asynchronous
-review, the demo recording is the more reliable artifact.
