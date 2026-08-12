@@ -5,8 +5,8 @@ customers with an overdue loan EMI, authenticates them, discloses the debt,
 and either secures a promise-to-pay or routes the call appropriately —
 built end-to-end on [Vapi](https://vapi.ai).
 
-- **HLD document:** [`docs/HLD_Document.pdf`](docs/HLD_Document.df)
-- **Architecture diagram:** [`docs/architecture_diagram.png`](docs/architecture_diagram.png)
+- **HLD document:** [`HLD_Document.pdf`](HLD_Document.pdf)
+- **Architecture diagram:** [`architecture_diagram.png`](architecture_diagram.png)
 - **System prompt:** [`vapi/system_prompt.txt`](vapi/system_prompt.txt)
 - **Tool schemas:** [`vapi/tools`](vapi/tools)
 - **Mock webhook server:** [`mock-server/`](mock-server/)
